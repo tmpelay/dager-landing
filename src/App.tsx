@@ -1,5 +1,7 @@
-import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
+import Logo from "./assets/logo.svg";
+
+import "./App.css";
 
 function App() {
   return (
@@ -16,14 +18,41 @@ function App() {
         <section className="about"></section>
         <section className="interests"></section>
         <section className="contact"></section>
-        <section className="last"></section>
       </main>
       <footer className="footer">
+        <img
+          src={Logo}
+          className="footer__logo"
+          alt="DotDager"
+          title="DotDager"
+        />
         <div className="footer__content">
-          <p className="footer__bye">Chau</p>
-          <i className="bx bx-up-arrow footer__arrow"></i>
+          <ul className="navbar__links">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Interests</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <span className="footer__line"></span>
+          <p className="footer__rights">
+            © 2024 Dot Dager, hecho con amor para marianito
+          </p>
         </div>
       </footer>
+      <section className="bye">
+        <div className="bye__content">
+          <p className="bye__bye">Chau</p>
+          <i className="bx bx-up-arrow bye__arrow"></i>
+        </div>
+      </section>
     </>
   );
 }
