@@ -39,7 +39,7 @@
 
 .header__hi {
   color: #fff;
-  font-family: "RobotoMono";
+  font-family: "Roboto Mono";
   font-size: 40px;
 }
 
@@ -71,6 +71,42 @@
   background-color: #800080;
 }
 
+/* --- About --- */
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-color: #800080;
+}
+
+/* --- Intersts --- */
+
+.interests {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-color: #800080;
+}
+
+/* --- contact --- */
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-color: #800080;
+}
+
 /* --- Last --- */
 
 .last {
@@ -92,6 +128,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  background-color: #000;
 }
 
 .footer__content {
@@ -104,7 +141,7 @@
 
 .footer__bye {
   color: #fff;
-  font-family: "RobotoMono";
+  font-family: "Roboto Mono";
   font-size: 40px;
 }
 

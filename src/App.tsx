@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
@@ -9,8 +10,14 @@ function App() {
           <i className="bx bx-down-arrow header__arrow"></i>
         </div>
       </header>
-      <section className="home"></section>
-      <section className="last"></section>
+      <main>
+        <Navbar />
+        <section className="home"></section>
+        <section className="about"></section>
+        <section className="interests"></section>
+        <section className="contact"></section>
+        <section className="last"></section>
+      </main>
       <footer className="footer">
         <div className="footer__content">
           <p className="footer__bye">Chau</p>
