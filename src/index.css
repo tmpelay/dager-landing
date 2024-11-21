@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "RobotoMono";
+  src: local("RobotoMono"), url("./assets/fonts/RobotoMono.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
