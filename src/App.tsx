@@ -34,16 +34,16 @@ function App() {
               guitarras.
             </p>
             <div className="home__links">
-              <a href="#">
+              <a href="https://www.youtube.com/@DotDager" target="blank">
                 <i className="bx bxl-youtube"></i>
               </a>
-              <a href="#">
+              <a href="https://github.com/MarianoVilla" target="blank">
                 <i className="bx bxl-github"></i>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/dager.32/" target="blank">
                 <i className="bx bxl-instagram"></i>
               </a>
-              <a href="#">
+              <a href="https://www.reddit.com/user/DagerDotCSV/" target="blank">
                 <i className="bx bxl-reddit"></i>
               </a>
             </div>
@@ -80,16 +80,19 @@ function App() {
             <div className="contact__links-wrapper">
               <p className="contact__follow-me">Seguime</p>
               <div className="contact__links">
-                <a href="#">
+                <a href="https://www.youtube.com/@DotDager" target="blank">
                   <i className="bx bxl-youtube"></i>
                 </a>
-                <a href="#">
+                <a href="https://github.com/MarianoVilla" target="blank">
                   <i className="bx bxl-github"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/dager.32/" target="blank">
                   <i className="bx bxl-instagram"></i>
                 </a>
-                <a href="#">
+                <a
+                  href="https://www.reddit.com/user/DagerDotCSV/"
+                  target="blank"
+                >
                   <i className="bx bxl-reddit"></i>
                 </a>
               </div>
