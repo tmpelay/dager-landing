@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #800080;
-  padding: 22px 110px;
+  padding: 22px 10%;
   z-index: 10;
 }
 
@@ -26,6 +26,11 @@
   font-weight: 600;
 }
 
+.navbar__nav {
+  display: flex;
+  align-items: center;
+}
+
 .navbar__links {
   list-style: none;
   display: flex;
@@ -40,6 +45,41 @@
   font-size: 18;
 }
 
-.navbar__links a:hover {
+.navbar__links a:hover,
+.navbar__menu-label:hover {
   text-shadow: 0px 0px 1px #fff;
+}
+
+.navbar__menu {
+  display: none;
+}
+
+.navbar__menu:checked ~ .navbar__links {
+  display: flex;
+}
+
+.navbar__menu-label {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* --- Queries --- */
+
+@media screen and (max-width: 1100px) {
+  .navbar__menu-label {
+    display: block;
+  }
+
+  .navbar__links {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 84px;
+    width: 100%;
+    background-color: #800080;
+    padding: 32px 0;
+    flex-direction: column;
+    gap: 32px;
+  }
 }
