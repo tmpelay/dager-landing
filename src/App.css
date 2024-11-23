@@ -135,7 +135,7 @@
 .about {
   width: 100vw;
   height: 100vh;
-  padding: 30px 38px;
+  padding: 30px 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,11 +147,63 @@
 .interests {
   width: 100vw;
   height: 100vh;
-  padding: 30px 38px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+  background-color: #800080;
+}
+
+.interests__slider {
+  display: flex;
+  margin-left: 50%;
+  transform: translateX(-240px);
+}
+
+.slider__image {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #800080;
+  min-width: 480px;
+  height: 320px;
+  padding: 0 80px;
+  transition: translate 0.2s;
+}
+
+.slider__image img {
+  transition: opacity 0.2s, width 0.2s;
+}
+
+.image__focused {
+  border-radius: 50%;
+  width: 320px;
+  cursor: pointer;
+}
+
+.image__unfocused {
+  border-radius: 50%;
+  width: 220px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.interests__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+  gap: 18px;
+}
+
+.interests__title {
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.interests__text {
+  text-align: center;
 }
 
 /* --- contact --- */

@@ -3,9 +3,53 @@ import Navbar from "./components/Navbar/Navbar";
 import Logo from "./assets/logo.svg";
 import ProfilePicture from "./assets/profile.png";
 
+import KittyImg from "./assets/kitty.png";
+import CodeImg from "./assets/code.png";
+import PhilosophyImg from "./assets/philosophy.png";
+import GuitarImg from "./assets/guitar.png";
+import PicklesImg from "./assets/pickles.png";
+
 import "./App.css";
+import { useState } from "react";
+
+const images = [KittyImg, CodeImg, PhilosophyImg, GuitarImg, PicklesImg];
 
 function App() {
+  const [imageIndex, setImageIndex] = useState(3);
+
+  const interests = [
+    {
+      title: "Gatos",
+      description:
+        "Los gatos son mis compañeros ideales: curiosos, independientes y llenos de personalidad. Siempre encuentran la forma de traer calma, inspiración y un poco de diversión a mis días.",
+    },
+    {
+      title: "Programacion",
+      description:
+        "La programación es mi manera de combinar lógica y creatividad. Me encanta construir cosas desde cero, resolver problemas y explorar nuevas ideas a través del código. Es un espacio donde puedo dar vida a mis proyectos y compartir lo que me apasiona con el mundo.",
+    },
+    {
+      title: "Filosofia",
+      description:
+        "La filosofía me invita a cuestionar, reflexionar y entender el mundo desde nuevas perspectivas. Es un espacio donde exploro preguntas profundas, busco significado y trato de conectar ideas que trascienden lo cotidiano.",
+    },
+    {
+      title: "Guitarra",
+      description:
+        "Tocar la guitarra es más que un pasatiempo; es una forma de expresar emociones y conectar con algo más grande. A través de la música encuentro equilibrio, inspiración y una vía para explorar mi creatividad.",
+    },
+
+    {
+      title: "Pepinillos",
+      description:
+        "Los pepinillos, aunque simples, son mi antojo favorito. Me recuerdan que a veces los pequeños placeres son los que realmente marcan la diferencia en la vida.",
+    },
+  ];
+
+  function changeImage(index: number) {
+    setImageIndex(index);
+  }
+
   return (
     <>
       <header className="header">
@@ -53,7 +97,34 @@ function App() {
           </div>
         </section>
         <section className="about" id="about"></section>
-        <section className="interests" id="intetests"></section>
+        <section className="interests" id="interests">
+          1
+          <div className="interests__slider">
+            {images.map((img, i) => {
+              return (
+                <div
+                  className="slider__image"
+                  style={{ translate: `${-100 * imageIndex}%` }}
+                >
+                  <img
+                    key={i}
+                    src={img}
+                    onClick={() => changeImage(i)}
+                    className={
+                      imageIndex == i ? "image__focused" : "image__unfocused"
+                    }
+                  />
+                </div>
+              );
+            })}
+          </div>
+          <div className="interests__description">
+            <h2 className="interests__title">{interests[imageIndex].title}</h2>
+            <p className="interests__text">
+              {interests[imageIndex].description}
+            </p>
+          </div>
+        </section>
         <section className="contact" id="contact">
           <div className="contact__content">
             <h2 className="contact__title">Contactame</h2>
