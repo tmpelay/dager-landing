@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 import Logo from "./assets/logo.svg";
 import ProfilePicture from "./assets/profile.png";
-
+import AboutPicture from "./assets/profile2.png";
 import KittyImg from "./assets/kitty.png";
 import CodeImg from "./assets/code.png";
 import PhilosophyImg from "./assets/philosophy.png";
@@ -96,7 +96,23 @@ function App() {
             <img src={ProfilePicture} alt="DotDager" title="DotDager picture" />
           </div>
         </section>
-        <section className="about" id="about"></section>
+        <section className="about" id="about">
+          <div className="about__photo">
+            <img src={AboutPicture} alt="DotDager" title="DotDager picture" />
+          </div>
+          <div className="about__content">
+            <h2 className="about__title">Sobre mi</h2>
+            <p className="about__description">
+              ¡Hola! Soy Mariano, también conocido como Dot Dager. Soy creador
+              de contenido con pasión por la programación, la filosofía, los
+              gatos, las guitarras y, por supuesto, los pepinillos.
+              <br />
+              <br /> Me encanta explorar ideas y conectar con los demás a través
+              de la tecnología y la creatividad. Este espacio refleja quién soy
+              y lo que me inspira. ¡Gracias por visitarme!
+            </p>
+          </div>
+        </section>
         <section className="interests" id="interests">
           1
           <div className="interests__slider">

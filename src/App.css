@@ -135,11 +135,26 @@
 .about {
   width: 100vw;
   height: 100vh;
-  padding: 30px 10%;
+  padding: 30px 12%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #800080;
+}
+
+.about__photo img {
+  width: 360px;
+  border-radius: 50%;
+}
+
+.about__content {
+  max-width: 695px;
+}
+
+.about__title {
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 22px;
 }
 
 /* --- Intersts --- */
